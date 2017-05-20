@@ -41,6 +41,7 @@ header .quotee {
     border-radius: 50%;
     margin-top: 25px;
     margin-bottom:5px;
+    width:200px;
 }
 /* footer */
 footer {
@@ -104,9 +105,12 @@ nav a:hover {
 }
 .bio p .p2 {
     clear: none;
+    margin-right:10px;
 }
 .bio img {
     float:right;
+    margin-left: 15px;
+    margin-bottom: 10px;
 }
 
 /* Work Experience, Education, Skills/Proficiencies, Awards
