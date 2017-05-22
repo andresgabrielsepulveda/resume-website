@@ -27,6 +27,8 @@ header {
 }
 header h1,h2 {
     margin-bottom:10px;
+    margin-left:5%;
+    margin-right:10%;
 }
 header p {
     margin-top:10px;
@@ -72,11 +74,11 @@ footer .copyright {
 /* Navigation
 ================ */
 nav {
-    float:left;
+    text-align:center;
 }
 nav h2 {
-    padding-left:1em;
-    padding-right:1em;
+    margin:0;
+    margin-top:10px;
 }
 nav a{
     font-size:20px;
@@ -88,19 +90,26 @@ nav a{
 nav a:hover {
     text-decoration:underline;
 }
+
 /* Biography (Index) 
 ================ */
 .bio {
-    font-size:1.5em;
-    overflow: hidden;
-    border-left: 1px solid grey;
-    margin: 20px;
-}
+        font-size:1.5em;
+        overflow: hidden;
+        margin: 20px;
+    }
+.bio .bio-img {
+        float:right;
+        width: 100%;
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
 .bio h2 {
-    padding-top:10px;
-    padding-left:25px;
-}
+        text-align:center;
+        padding-left:2%;
+    }
 .bio p {
+    text-align:center;
     padding-left:15px;
 }
 .bio p .p2 {
@@ -108,9 +117,6 @@ nav a:hover {
     margin-right:10px;
 }
 .bio img {
-    float:right;
-    margin-left: 15px;
-    margin-bottom: 10px;
 }
 
 /* Work Experience, Education, Skills/Proficiencies, Awards
@@ -118,10 +124,10 @@ nav a:hover {
 .workex , .education , .skillsProf , .awards{
     font-size:1.5em;
     overflow: hidden;
-    border-left: 1px solid grey;
     margin: 20px;
 }
 .workex h2 , .education h2 , .skillsProf h2 , .awards h2 {
+    text-align:center;
     padding-top:10px;
     padding-left:25px;
 }
@@ -138,4 +144,48 @@ nav a:hover {
     margin-top:0;
     margin-bottom:5px;
     padding-left:60px;
+}
+
+/* Media Queries
+================ */
+@media (min-width: 700px) {
+    nav {
+        text-align:left;
+        float:left;
+    }
+    nav h2 {
+        padding-top: 35px;
+        padding-left:10px;
+        padding-right:20px;
+        padding-bottom:5px;
+    }
+    nav a {
+        padding-left:10px;
+        padding-right:20px;
+        padding-bottom:5px;
+    }
+    .bio {
+        border-left: 1px solid grey;
+    }
+    .bio h2 {
+        text-align:left;
+        margin-left:20px;
+        padding:0;
+    }
+    .bio .bio-img {
+        width: 50%;
+    }
+    .bio p {
+        padding-left:10px;
+        font-size:1.15em;
+    }
+    .workex , .education , .skillsProf , .awards {
+        text-align:left;
+        border-left: 1px solid grey;
+    }
+    .workex h2 , .education h2 , .skillsProf h2 , .awards h2 {
+        text-align:left;
+        margin:0;
+        margin-top:20px;
+    }
 }
